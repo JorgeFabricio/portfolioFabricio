@@ -1,0 +1,48 @@
+/*Reglas        --> body {
+                      background: #ffbf00;
+                    }
+  Selectores    --> body {
+                    }
+  Declaraciones -->      {
+                      background: #ffbf00;
+                    }
+  Propiedades   --> background:
+  Valores       --> #ffbf00;*/
+header {
+  background: rgb(34,72,95);
+}
+
+body {
+  background-color: rgb(206, 206, 234);
+  font-family: "Bitter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Signika", sans-serif;
+  font-weight: normal;
+  letter-spacing: -.2px;
+}
+h1 {
+  line-height: 35px;
+  font-size: 30px;
+}
+
+body header nav ol li a {
+  color: #FFFF;
+}
+
+ol {
+  color: #FFFF;
+}
+
+body header nav ol li a {
+  text-decoration: none;
+}
+
+.project-details {
+  width: 500px;
+}
+
+.project-image {
+  width: 150px;
+}
