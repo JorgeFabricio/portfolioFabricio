@@ -46,3 +46,7 @@ body header nav ol li a {
 .project-image {
   width: 150px;
 }
+
+.hero {
+  background-image: url('esc-ing.jpg');
+}
