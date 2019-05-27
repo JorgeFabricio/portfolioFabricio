@@ -131,6 +131,7 @@ li {
   border-radius: 10px;
 }
 
+<<<<<<< Updated upstream
 .english-certification {
   background-color: lightblue;
   border: solid;
@@ -176,4 +177,11 @@ section article div figure {
 .footer-content a {
   color: #FFFFFF;
   text-decoration: none;
+=======
+.hero {
+  background-image: url("../hero-back.png");
+  background-size: 100%;
+  background-position:right;
+  color: #FFFFFF;
+>>>>>>> Stashed changes
 }
