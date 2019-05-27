@@ -99,7 +99,19 @@ li {
   font-family: 'Encode Sans', sans-serif;
 }
 
-.portfolio-project {
+.portfolio-title {
+  margin-left: 380px;
+}
+
+.software-title {
+  margin-left: 640px;
+}
+
+.contact-title {
+  margin-left: 470px;
+}
+
+.project {
   border: solid;
   background-color: lightblue;
   position: relative;
@@ -107,13 +119,14 @@ li {
   border-radius: 10px;
   padding: 40px;
   padding-left: 100px;
-  margin: 200px;
+  margin: 300px;
   margin-top: 0px;
   margin-bottom: 60px;
   box-sizing: border-box;
   font-size: 20px;
   display: flex;
   justify-content: center;
+  max-width: 1308px;
 }
 
 .project-details {
@@ -141,6 +154,7 @@ li {
   margin-bottom: 60px;
   box-sizing: border-box;
   font-size: 20px;
+  max-width: 1508px;
 }
 .certifications-imageContainer {
   display: flex;
@@ -148,20 +162,90 @@ li {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 section article div figure {
   margin: 5px;
 }
 
-.contact-article, .software-article {
+.software-article {
   background-color: lightblue;
   border: solid;
   border-radius: 10px;
-  padding: 30px;
-  margin: 200px;
+  padding: 20px;
+  margin: 600px;
   margin-top: 0px;
   margin-bottom: 60px;
   box-sizing: border-box;
   font-size: 20px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  max-width: 708px;
+}
+
+.software-article p {
+  padding: 20px;
+  border-right: 5px solid;
+}
+
+.contact-article {
+  background-color: rgb(64, 77, 96);
+  color: #FFFFFF;
+  border: solid;
+  border-color: #000000;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 400px;
+  margin-top: 0px;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 1108px;
+}
+
+.contact-title {
+  background-color: rgb(64, 77, 96);
+  color: #FFFFFF;
+}
+
+.social-link {
+  width: 50px;
+  height: 50px;
+  background-size: 70px 70px;
+  margin: 10px;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.social-link.github {
+  background-image: url("../índice.svg");
+  width: 70px;
+  height: 70px;
+}
+
+.social-link.twitter {
+  background-image: url("../tw.svg");
+  width: 70px;
+  height: 70px;
+}
+
+.social-link.facebook {
+  background-image: url("../fb.svg");
+  width: 70px;
+  height: 70px;
+}
+
+.social-link.instagram {
+  background-image: url("../ins.svg");
+  width: 70px;
+  height: 70px;
+}
+
+.social-media {
+  display: flex;
+
 }
 
 .footer-content {
@@ -175,5 +259,19 @@ section article div figure {
 
 .footer-content a {
   color: #FFFFFF;
-  text-decoration: none;}
-  
+  text-decoration: none;
+}
+
+.email-input {
+  border-radius: 10px;
+  height: 30px;
+}
+
+.send-button {
+  display: block;
+  margin: 5px;
+  margin-left: 0px;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+}
