@@ -21,8 +21,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: flex;
-  min-width: 1111px;
+  /*min-width: 1111px;*/
 }
 
 .hero {
@@ -37,7 +36,7 @@ header {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  min-width: 1908px;
+  /*min-width: 1908px;*/
 }
 
 body {
@@ -83,7 +82,7 @@ body header nav ol li a {
 
 body header nav ol li a:hover {
   color: black;
-  border: solid;
+  padding: 4px;
   border-color: black;
   border-radius: 10px;
   background-color: rgb(173, 216, 230);
@@ -104,72 +103,75 @@ li {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: lightblue;
-  margin-left: 250px;
-  margin-bottom: 0px;
+  margin: 0px;
   padding: 10px;
   text-align: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
   font-family: 'Encode Sans', sans-serif;
 }
 
 .portfolio-title {
-  margin-left: 380px;
+  left: 350px;
+  width: 400px;
 }
 
 .software-title {
-  margin-left: 640px;
+  left: 650px;
+}
+
+.certifications-title {
+  left: 250px;
 }
 
 .contact-title {
-  margin-left: 470px;
+  left: 450px;
 }
 
 .project {
-  border: solid;
+  width: 1350px;
   background-color: lightblue;
-  position: relative;
   border: solid;
   border-radius: 10px;
   padding: 40px;
   padding-left: 100px;
-  margin: 300px;
-  margin-top: 0px;
+  margin: 0px;
   margin-bottom: 60px;
   box-sizing: border-box;
   font-size: 20px;
   display: flex;
+  position: relative;
+  left: 250px;
   justify-content: center;
-  max-width: 1308px;
-  min-width: 1308px;
+  /*min-width: 1308px;*/
 }
 
 .project-details {
   width: 700px;
 }
 
-.project {
-  display: flex;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-}
-
 .project-image {
   width: 200px;
+  margin: 0px;
   border-radius: 10px;
 }
 
 .english-certification {
+  width: 1500px;
   background-color: lightblue;
   border: solid;
   border-radius: 10px;
   padding: 50px;
-  margin: 200px;
-  margin-top: 0px;
+  margin: 0px;
   margin-bottom: 60px;
+  display: inline-block;
+  position: relative;
+  left: 170px;
   box-sizing: border-box;
   font-size: 20px;
-  max-width: 1508px;
-  min-width: 1508px;
 }
+
 .certifications-imageContainer {
   display: flex;
   flex-shrink: 0;
@@ -182,20 +184,19 @@ section article div figure {
 }
 
 .software-article {
+  width: 700px;
   background-color: lightblue;
   border: solid;
   border-radius: 10px;
   padding: 20px;
-  margin: 600px;
-  margin-top: 0px;
+  margin: 0px;
   margin-bottom: 60px;
   box-sizing: border-box;
-  font-size: 20px;
   font-size: 25px;
   display: flex;
+  position: relative;
+  left: 600px;
   justify-content: center;
-  max-width: 708px;
-  min-width: 708px;
 }
 
 .software-article p {
@@ -204,21 +205,21 @@ section article div figure {
 }
 
 .contact-article {
+  width: 1110px;
   background-color: rgb(64, 77, 96);
   color: #FFFFFF;
   border: solid;
   border-color: #000000;
   border-radius: 10px;
   padding: 30px;
-  margin: 400px;
-  margin-top: 0px;
+  margin: 0px;
   margin-bottom: 60px;
   box-sizing: border-box;
   font-size: 20px;
   display: flex;
+  position: relative;
+  left: 400px;
   align-items: center;
-  max-width: 1108px;
-  min-width: 1108px;
 }
 
 .contact-title {
@@ -294,15 +295,21 @@ section article div figure {
 }
 
 .email-input {
+  text-align: center;
   border-radius: 10px;
   height: 30px;
 }
 
 .send-button {
   display: block;
-  margin: 5px;
-  margin-left: 0px;
+  margin: 0px;
+  margin-top: 5px;
   height: 40px;
   width: 120px;
   border-radius: 10px;
+}
+
+.send-button:hover {
+  cursor: pointer;
+  background-color: gray;
 }
