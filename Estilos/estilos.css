@@ -9,26 +9,17 @@
   Propiedades   --> background:
   Valores       --> #ffbf00;*/
 
-header {
-  height: 30px;
-  display: flex;
-}
-
 .header {
-  width: 1100px;
+  height: 30px;
   margin: 0px;
   background-color: rgb(32, 38, 48);
   padding: 10px;
   display: flex;
-  position: relative;
-  left: 230px;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .hero {
-  width: 1828px;
   border: solid;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -36,12 +27,12 @@ header {
   border-width: thick;
   height: 300px;
   margin-bottom: 60px;
-  background-image: url('../hero-back.jpg');
+  background-image: url('../images/hero-back.jpg');
   background-repeat: no-repeat;
   box-sizing: border-box;
-  display: flex;
   justify-content: center;
-  /*min-width: 1908px;*/
+  display: flex;
+  flex-wrap: wrap;
 }
 
 body {
@@ -59,7 +50,7 @@ h1 {
   color: #FFFFFF;
   line-height: 53px;
   font-size: 50px;
-  text-shadow: 5px 5px #000000
+  text-shadow: 5px 5px #000000;
 }
 
 h1 strong {
@@ -80,18 +71,20 @@ body header nav ol {
 }
 
 body header nav ol li a {
-  color: #FFFFFF;
+  color: rgb(231, 152, 113);
+  padding: 5px;
   margin: 0px 3px 0px 3px;
   font-size: 18px;
+  font-weight: bold;
   text-decoration: none;
 }
 
 body header nav ol li a:hover {
-  color: black;
-  padding: 4px;
-  border-color: black;
+  color: #FFF;
+  border-color: #000;;
   border-radius: 10px;
-  background-color: rgb(173, 216, 230);
+  background-color: rgb(231, 152, 113);
+
 }
 
 li {
@@ -242,7 +235,7 @@ section article div figure {
 }
 
 .social-link.github {
-  background-image: url("../índice.svg");
+  background-image: url("../images/índice.svg");
   width: 70px;
   height: 70px;
 }
@@ -253,40 +246,36 @@ section article div figure {
 }
 
 .social-link.twitter {
-  background-image: url("../tw.svg");
+  background-image: url("../images/tw.svg");
   width: 70px;
   height: 70px;
 }
 
 .social-link.twitter:hover {
-  border-radius: 50px;
+  border-radius: 10px;
   background-color: rgb(31, 162, 242);
 }
 
 .social-link.facebook {
-  background-image: url("../fb.svg");
+  background-image: url("../images/fb.svg");
   width: 70px;
   height: 70px;
 }
 
 .social-link.facebook:hover {
-  border-radius: 50px;
+  border-radius: 10px;
   background-color: blue;
 }
 
 .social-link.instagram {
-  background-image: url("../ins.svg");
+  background-image: url("../images/ins.svg");
   width: 70px;
   height: 70px;
 }
 
 .social-link.instagram:hover{
-  border-radius: 50px;
+  border-radius: 20px;
   background-color: rgb(249, 196, 92);
-}
-
-.footer {
-  width: 1828px;
 }
 
 .footer-content {
@@ -320,5 +309,21 @@ section article div figure {
 
 .send-button:hover {
   cursor: pointer;
-  background-color: gray;
+  background-color: rgb(231, 152, 113);
+}
+
+@media screen and (max-width:1024px) {
+
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:480px) {
+
+}
+
+@media screen and (max-width:320px) {
+
 }
