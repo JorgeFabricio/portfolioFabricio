@@ -53,11 +53,11 @@ p {
 }
 
 h1 {
-  width: 910px;
-  color: #FFFFFF;
+  color: #FFF;
   line-height: 53px;
   font-size: 50px;
-  text-shadow: 5px 5px #000000;
+  text-shadow: 5px 5px #000;
+  width: 910px;
 }
 
 h1 strong {
@@ -184,7 +184,7 @@ li {
   border-radius: 10px;
 }
 
-.english-certification {
+.certifications {
   color: #FFF;
   font-size: 20px;
   width: 1500px;
@@ -201,12 +201,51 @@ li {
   box-sizing: border-box;
 }
 
-.english-certification a {
+.certifications a {
   color: #FFF;
 }
 
-.eng1, .eng2, .eng3, .eng4, .eng5, .eng6 {
+.certifications-deswebTitle {
+  border-bottom: 3px solid #FFF;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.certifications-imageContainer-desweb {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.desweb1 {
+  border-radius: 10px;
+}
+
+.certifications-engineeringTitle {
+  border-bottom: 3px solid #FFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.certifications-imageContainer-engineering {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.engineering1 {
+  border-radius: 10px;
+}
+
+.certifications-englishTitle {
+  border-bottom: 3px solid #FFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .certifications-imageContainer {
@@ -214,6 +253,28 @@ li {
   flex-shrink: 0;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.eng1, .eng2, .eng3, .eng4, .eng5, .eng6 {
+  border-radius: 10px;
+}
+
+.certifications-physicsTitle {
+  border-bottom: 3px solid #FFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.certifications-imageContainer-physics {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.physics1 {
+  border-radius: 10px;
 }
 
 section article div figure {
