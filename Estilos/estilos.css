@@ -9,6 +9,12 @@
   Propiedades   --> background:
   Valores       --> #ffbf00;*/
 
+/*gris #8E7970
+  rojo #F55449
+  negro #0F1F38
+  azul1 #1B4B5A
+  azul2 #78A5A3*/
+
 .header {
   height: 40px;
   margin: 0px;
@@ -19,6 +25,8 @@
 }
 
 .hero {
+  border-bottom: 3px solid #78A5A3;
+  border-top: 3px solid #78A5A3;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   height: 300px;
@@ -33,7 +41,7 @@
 }
 
 body {
-  background-color: rgb(46, 46, 41);
+  background-color: #1B4B5A;
   font-family: 'Encode Sans', sans-serif;
   margin: 0;
   flex-wrap: wrap;
@@ -53,7 +61,7 @@ h1 {
 }
 
 h1 strong {
-  color: rgb(248, 210, 66);
+  color: #78A5A3;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -63,31 +71,38 @@ h1, h2, h3, h4, h5, h6{
 }
 
 body header nav ol {
-  border: 3px solid rgb(248, 210, 66);
+  /*Size*/
+  height: 40px;
+  /*Border*/
+  border-bottom: 3px solid #78A5A3;
+  border-top: 3px solid #78A5A3;
   border-radius: 10px;
-  background-color: #FFF;
+  /*Background*/
+  background-color: #1B4B5A;
+  /*Margin & padding*/
   margin: 0px;
   padding: 0px;
-  height: 40px;
+  /*Orientation & position*/
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 body header nav ol li a {
-  color: #000;
-  padding: 5px;
-  margin: 0px 3px 0px 3px;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
+  color: #FFF;
+  margin: 0px 3px 0px 3px;
+  padding: 5px;
+  justify-content: space-around;
 }
 
 body header nav ol li a:hover {
-  color: rgb(248, 210, 66);
-  border-color: #000;;
+  border-left: 3px solid #FFF;
+  border-right: 3px solid #FFF;
   border-radius: 10px;
-  background-color: rgb(46, 46, 41);
-
+  background-color: #0F1F38;
 }
 
 li {
@@ -99,7 +114,7 @@ li {
 
 .portfolio-title, .certifications-title, .contact-title, .software-title {
   /*Font*/
-  color: #000000;
+  color: #FFF;
   font-family: 'Encode Sans', sans-serif;
   /*Size*/
   width: 350px;
@@ -108,7 +123,7 @@ li {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   /*Background*/
-  background-color: rgb(248, 210, 66);
+  background-color: #0F1F38;
   /*Margin & padding*/
   margin: 0px;
   padding: 10px;
@@ -137,25 +152,30 @@ li {
 }
 
 .project {
+  color: #FFF;
+  font-size: 20px;
   width: 1350px;
-  background-color: rgb(248, 210, 66);
-  border: 3px solid #FFF;
+  background-color: #0F1F38;
+  border-bottom: 3px solid #78A5A3;
+  border-top: 3px solid #78A5A3;
   border-radius: 10px;
-  padding: 40px;
-  padding-left: 100px;
   margin: 0px;
   margin-bottom: 60px;
+  padding: 40px;
+  padding-left: 100px;
   box-sizing: border-box;
-  font-size: 20px;
   display: flex;
   position: relative;
   left: 250px;
   justify-content: center;
-  /*min-width: 1308px;*/
 }
 
 .project-details {
   width: 700px;
+}
+
+.project-details a {
+  color: #FFF;
 }
 
 .project-image {
@@ -165,9 +185,12 @@ li {
 }
 
 .english-certification {
+  color: #FFF;
+  font-size: 20px;
   width: 1500px;
-  background-color: rgb(248, 210, 66);
-  border: 3px solid #FFF;
+  background-color: #0F1F38;
+  border-bottom: 3px solid #78A5A3;
+  border-top: 3px solid #78A5A3;
   border-radius: 10px;
   padding: 50px;
   margin: 0px;
@@ -176,7 +199,10 @@ li {
   position: relative;
   left: 170px;
   box-sizing: border-box;
-  font-size: 20px;
+}
+
+.english-certification a {
+  color: #FFF;
 }
 
 .eng1, .eng2, .eng3, .eng4, .eng5, .eng6 {
@@ -195,15 +221,17 @@ section article div figure {
 }
 
 .software-article {
+  color: #FFF;
+  font-size: 25px;
   width: 700px;
-  background-color: rgb(248, 210, 66);
-  border: 3px solid #FFF;
+  background-color: #0F1F38;
+  border-bottom: 3px solid #78A5A3;
+  border-top: 3px solid #78A5A3;
   border-radius: 10px;
   padding: 20px;
   margin: 0px;
   margin-bottom: 60px;
   box-sizing: border-box;
-  font-size: 25px;
   display: flex;
   position: relative;
   left: 600px;
@@ -216,25 +244,26 @@ section article div figure {
 }
 
 .contact-article {
+  font-size: 20px;
+  color: #FFF;
   width: 1110px;
-  background-color: rgb(64, 77, 96);
-  color: #FFFFFF;
-  border: 3px solid #FFF;
+  background-color: #0F1F38;
+  border-bottom: 3px solid #78A5A3;
+  border-top: 3px solid #78A5A3;
   border-radius: 10px;
-  padding: 30px;
   margin: 0px;
   margin-bottom: 60px;
-  box-sizing: border-box;
-  font-size: 20px;
-  display: flex;
+  padding: 30px;
   position: relative;
-  left: 400px;
+  left: 350px;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .contact-title {
-  background-color: rgb(64, 77, 96);
-  color: #FFFFFF;
+  background-color: #0F1F38;
+  color: #FFF;
 }
 
 .social-media {
@@ -296,17 +325,26 @@ section article div figure {
 }
 
 .footer-content {
-  background-color: rgb(64, 77, 96);
-  color: #FFFFFF;
+  background-color: #0F1F38;
+  color: #FFF;
   text-decoration: none;
   display: flex;
   justify-content: space-around;
   font-family: 'Encode Sans', sans-serif;
+  flex-wrap: wrap;
 }
 
 .footer-content a {
   color: #FFFFFF;
   text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  border-bottom: 2px solid #FFF;
+  border-top: 2px solid #FFF;
+  border-radius: 10px;
+  padding: 2px;
 }
 
 .email-input {
@@ -316,7 +354,6 @@ section article div figure {
 }
 
 .send-button {
-  display: block;
   margin: 0px;
   margin-top: 5px;
   height: 40px;
