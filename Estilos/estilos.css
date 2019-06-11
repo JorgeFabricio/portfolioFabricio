@@ -10,39 +10,38 @@
   Valores       --> #ffbf00;*/
 
 .header {
-  height: 30px;
+  height: 40px;
   margin: 0px;
-  background-color: rgb(32, 38, 48);
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .hero {
-  border: solid;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-color: #000000;
-  border-width: thick;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   height: 300px;
   margin-bottom: 60px;
   background-image: url('../images/hero-back.jpg');
   background-repeat: no-repeat;
   box-sizing: border-box;
+  text-align: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 
 body {
-  background-color: rgb(32, 38, 48);
+  background-color: rgb(46, 46, 41);
   font-family: 'Encode Sans', sans-serif;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 p {
   font-family: 'Encode Sans', sans-serif;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -54,7 +53,7 @@ h1 {
 }
 
 h1 strong {
-  color: rgb(231, 152, 113);
+  color: rgb(248, 210, 66);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -64,14 +63,18 @@ h1, h2, h3, h4, h5, h6{
 }
 
 body header nav ol {
+  border: 3px solid rgb(248, 210, 66);
+  border-radius: 10px;
+  background-color: #FFF;
   margin: 0px;
   padding: 0px;
   height: 40px;
-  color: #FFFF;
+  display: flex;
+  align-items: center;
 }
 
 body header nav ol li a {
-  color: rgb(231, 152, 113);
+  color: #000;
   padding: 5px;
   margin: 0px 3px 0px 3px;
   font-size: 18px;
@@ -80,10 +83,10 @@ body header nav ol li a {
 }
 
 body header nav ol li a:hover {
-  color: #FFF;
+  color: rgb(248, 210, 66);
   border-color: #000;;
   border-radius: 10px;
-  background-color: rgb(231, 152, 113);
+  background-color: rgb(46, 46, 41);
 
 }
 
@@ -95,19 +98,25 @@ li {
 }
 
 .portfolio-title, .certifications-title, .contact-title, .software-title {
+  /*Font*/
   color: #000000;
+  font-family: 'Encode Sans', sans-serif;
+  /*Size*/
   width: 350px;
   height: 40px;
+  /*Border*/
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: lightblue;
+  /*Background*/
+  background-color: rgb(248, 210, 66);
+  /*Margin & padding*/
   margin: 0px;
   padding: 10px;
-  text-align: center;
+  /*Orientation and location*/
   display: flex;
   position: relative;
   justify-content: center;
-  font-family: 'Encode Sans', sans-serif;
+  flex-wrap: wrap;
 }
 
 .portfolio-title {
@@ -129,8 +138,8 @@ li {
 
 .project {
   width: 1350px;
-  background-color: lightblue;
-  border: solid;
+  background-color: rgb(248, 210, 66);
+  border: 3px solid #FFF;
   border-radius: 10px;
   padding: 40px;
   padding-left: 100px;
@@ -157,8 +166,8 @@ li {
 
 .english-certification {
   width: 1500px;
-  background-color: lightblue;
-  border: solid;
+  background-color: rgb(248, 210, 66);
+  border: 3px solid #FFF;
   border-radius: 10px;
   padding: 50px;
   margin: 0px;
@@ -168,6 +177,10 @@ li {
   left: 170px;
   box-sizing: border-box;
   font-size: 20px;
+}
+
+.eng1, .eng2, .eng3, .eng4, .eng5, .eng6 {
+  border-radius: 10px;
 }
 
 .certifications-imageContainer {
@@ -183,8 +196,8 @@ section article div figure {
 
 .software-article {
   width: 700px;
-  background-color: lightblue;
-  border: solid;
+  background-color: rgb(248, 210, 66);
+  border: 3px solid #FFF;
   border-radius: 10px;
   padding: 20px;
   margin: 0px;
@@ -206,8 +219,7 @@ section article div figure {
   width: 1110px;
   background-color: rgb(64, 77, 96);
   color: #FFFFFF;
-  border: solid;
-  border-color: #000000;
+  border: 3px solid #FFF;
   border-radius: 10px;
   padding: 30px;
   margin: 0px;
@@ -225,13 +237,18 @@ section article div figure {
   color: #FFFFFF;
 }
 
+.social-media {
+  position: relative;
+  left: 30px;
+}
+
 .social-link {
   width: 50px;
   height: 50px;
   background-size: 70px 70px;
   margin: 10px;
   display: inline-block;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .social-link.github {
