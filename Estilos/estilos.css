@@ -16,58 +16,85 @@
   azul2 #78A5A3*/
 
 .header {
+  /*Size*/
+  /* max-width: 1024px;
+  flex: 1; */
   height: 40px;
+  /*Margin & padding*/
   margin: 0px;
   padding: 10px;
+  /*Orientation & position*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .hero {
+  /*Font*/
+  text-align: center;
+  /*Size*/
+  height: 300px;
+  /*Border*/
   border-bottom: 3px solid #78A5A3;
   border-top: 3px solid #78A5A3;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  height: 300px;
+  /*Margin & padding*/
   margin-bottom: 60px;
+  /*Background*/
   background-image: url('../images/hero-back.jpg');
   background-repeat: no-repeat;
+  /*Orientation & position*/
   box-sizing: border-box;
-  text-align: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 
 body {
-  background-color: #1B4B5A;
+  /*Font*/
   font-family: 'Encode Sans', sans-serif;
+  /*Margin & padding*/
   margin: 0;
+  /*Background*/
+  background-color: #1B4B5A;
+  /*Orientation & position*/
   flex-wrap: wrap;
 }
 
 p {
+  /*Font*/
   font-family: 'Encode Sans', sans-serif;
+  /*Orientation & position*/
   flex-wrap: wrap;
 }
 
 h1 {
+  /*Font*/
   color: #FFF;
   line-height: 53px;
   font-size: 50px;
   text-shadow: 5px 5px #000;
+  /*Size*/
   width: 910px;
+  /*Orientation & position*/
+  flex-wrap: wrap;
 }
 
 h1 strong {
-  color: #78A5A3;
+  /*Font*/
+  color: #F55449;
+  /*Orientation & position*/
+  flex-wrap: wrap;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
+  /*Font*/
   font-family: "Signika", sans-serif;
   font-weight: normal;
   letter-spacing: -.2px;
+  /*Orientation & position*/
+  flex-wrap: wrap;
 }
 
 body header nav ol {
@@ -89,27 +116,37 @@ body header nav ol {
 }
 
 body header nav ol li a {
+  /*Font*/
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
   color: #FFF;
+  /*Margin & padding*/
   margin: 0px 3px 0px 3px;
   padding: 5px;
+  /*Orientation & position*/
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 body header nav ol li a:hover {
+  /*Border*/
   border-left: 3px solid #FFF;
   border-right: 3px solid #FFF;
   border-radius: 10px;
+  /*Background*/
   background-color: #0F1F38;
 }
 
 li {
-  display: inline;
+  /*Font*/
   font-size: 20px;
-  margin: 0px 20px 0px 20px;
   text-align: center;
+  /*Margin & padding*/
+  margin: 0px 20px 0px 20px;
+  /*Orientation & position*/
+  flex-wrap: wrap;
+  display: inline;
 }
 
 .portfolio-title, .certifications-title, .contact-title, .software-title {
@@ -125,94 +162,138 @@ li {
   /*Background*/
   background-color: #0F1F38;
   /*Margin & padding*/
-  margin: 0px;
+  margin: 0px 20px 0px 40px;
   padding: 10px;
-  /*Orientation and location*/
+  /*Orientation and position*/
   display: flex;
-  position: relative;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .portfolio-title {
-  left: 350px;
+  /*Size*/
   width: 400px;
+  /*Orientation & position*/
+  flex-wrap: wrap;
+  left: 350px;
 }
 
 .software-title {
+  /*Orientation & position*/
+  flex-wrap: wrap;
   left: 650px;
 }
 
 .certifications-title {
+  /*Orientation & position*/
+  flex-wrap: wrap;
   left: 250px;
 }
 
 .contact-title {
+  /*Orientation & position*/
+  flex-wrap: wrap;
   left: 450px;
 }
 
 .project {
+  /*Font*/
   color: #FFF;
   font-size: 20px;
-  width: 1350px;
-  background-color: #0F1F38;
+  /*Size*/
+
+  /*Border*/
   border-bottom: 3px solid #78A5A3;
   border-top: 3px solid #78A5A3;
   border-radius: 10px;
-  margin: 0px;
-  margin-bottom: 60px;
+  /*Margin & padding*/
+  margin: 0px 20px 60px 20px;
   padding: 40px;
   padding-left: 100px;
+  /*Background*/
+  background-color: #0F1F38;
+  /*Orientation and position*/
   box-sizing: border-box;
   display: flex;
-  position: relative;
-  left: 250px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project-details {
+  /*Size*/
   width: 700px;
+  /*Orientation & position*/
+  flex-wrap: wrap;
 }
 
 .project-details a {
+  /*Font*/
   color: #FFF;
+  text-decoration: none;
+  /*Orientation & position*/
+  flex-wrap: wrap;
+}
+
+.project-details a:hover {
+  /*Font*/
+  text-decoration: underline;
 }
 
 .project-image {
+  /*Size*/
   width: 200px;
-  margin: 0px;
+  /*Border*/
   border-radius: 10px;
+  /*Margin & padding*/
+  margin: 0px;
+  /*Orientation & position*/
+  flex-wrap: wrap;
 }
 
 .certifications {
+  /*Font*/
   color: #FFF;
   font-size: 20px;
-  width: 1500px;
-  background-color: #0F1F38;
+  /*Size*/
+  /*Border*/
   border-bottom: 3px solid #78A5A3;
   border-top: 3px solid #78A5A3;
   border-radius: 10px;
+  /*Background*/
+  background-color: #0F1F38;
+  /*Margin & padding*/
+  margin: 0px 20px 60px 20px;
   padding: 50px;
-  margin: 0px;
-  margin-bottom: 60px;
-  display: inline-block;
-  position: relative;
-  left: 170px;
+  /*Orientation & position*/
+  flex-wrap: wrap;
   box-sizing: border-box;
 }
 
 .certifications a {
+  /*Font*/
   color: #FFF;
+  /*Orientation & position*/
+  flex-wrap: wrap;
 }
 
 .certifications-deswebTitle {
-  border-bottom: 3px solid #FFF;
+  /*Size*/
+  width: 400px;
+  /*Margin & padding*/
+  margin-left: auto;
+  margin-right: auto;
+  /*Border*/
+  border-right: 3px solid #FFF;
+  border-left: 3px solid #FFF;
   border-radius: 10px;
+  /*Orientation & position*/
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
 
 .certifications-imageContainer-desweb {
+  /*Orientation & position*/
   display: flex;
   flex-shrink: 0;
   flex-wrap: wrap;
@@ -220,12 +301,21 @@ li {
 }
 
 .desweb1 {
+  /*Border*/
   border-radius: 10px;
 }
 
 .certifications-engineeringTitle {
-  border-bottom: 3px solid #FFF;
+  /*Size*/
+  width: 400px;
+  /*Margin & padding*/
+  margin-left: auto;
+  margin-right: auto;
+  /*Border*/
+  border-right: 3px solid #FFF;
+  border-left: 3px solid #FFF;
   border-radius: 10px;
+  /*Orientation & position*/
   display: flex;
   justify-content: center;
 }
@@ -237,13 +327,21 @@ li {
   justify-content: center;
 }
 
-.engineering1 {
+.engineering1, .engineering2 {
   border-radius: 10px;
 }
 
 .certifications-englishTitle {
-  border-bottom: 3px solid #FFF;
+  /*Size*/
+  width: 400px;
+  /*Margin & padding*/
+  margin-left: auto;
+  margin-right: auto;
+  /*Border*/
+  border-right: 3px solid #FFF;
+  border-left: 3px solid #FFF;
   border-radius: 10px;
+  /*Orientation & position*/
   display: flex;
   justify-content: center;
 }
@@ -260,8 +358,16 @@ li {
 }
 
 .certifications-physicsTitle {
-  border-bottom: 3px solid #FFF;
+  /*Size*/
+  width: 400px;
+  /*Margin & padding*/
+  margin-left: auto;
+  margin-right: auto;
+  /*Border*/
+  border-right: 3px solid #FFF;
+  border-left: 3px solid #FFF;
   border-radius: 10px;
+  /*Orientation & position*/
   display: flex;
   justify-content: center;
 }
@@ -277,6 +383,16 @@ li {
   border-radius: 10px;
 }
 
+.certifications-profile {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.certifications-profile:hover {
+  text-decoration: underline;
+}
+
 section article div figure {
   margin: 5px;
 }
@@ -284,18 +400,14 @@ section article div figure {
 .software-article {
   color: #FFF;
   font-size: 25px;
-  width: 700px;
   background-color: #0F1F38;
   border-bottom: 3px solid #78A5A3;
   border-top: 3px solid #78A5A3;
   border-radius: 10px;
   padding: 20px;
-  margin: 0px;
-  margin-bottom: 60px;
+  margin: 0px 20px 60px 20px;
   box-sizing: border-box;
   display: flex;
-  position: relative;
-  left: 600px;
   justify-content: center;
 }
 
@@ -307,19 +419,16 @@ section article div figure {
 .contact-article {
   font-size: 20px;
   color: #FFF;
-  width: 1110px;
   background-color: #0F1F38;
   border-bottom: 3px solid #78A5A3;
   border-top: 3px solid #78A5A3;
   border-radius: 10px;
-  margin: 0px;
-  margin-bottom: 60px;
+  margin: 0px 20px 60px 20px;
   padding: 30px;
-  position: relative;
-  left: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contact-title {
@@ -327,17 +436,12 @@ section article div figure {
   color: #FFF;
 }
 
-.social-media {
-  position: relative;
-  left: 30px;
-}
-
 .social-link {
   width: 50px;
   height: 50px;
   background-size: 70px 70px;
   margin: 10px;
-  display: inline-block;
+  display: inline-flex;
   justify-content: space-around;
 }
 
@@ -410,29 +514,44 @@ section article div figure {
 
 .email-input {
   text-align: center;
-  border-radius: 10px;
+  width: 300px;
   height: 30px;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
 .send-button {
   margin: 0px;
   margin-top: 5px;
   height: 40px;
-  width: 120px;
+  width: 80px;
   border-radius: 10px;
 }
 
 .send-button:hover {
+  color: #FFF;
   cursor: pointer;
-  background-color: rgb(231, 152, 113);
+  background-color: #0F1F38;
 }
 
 @media screen and (max-width:1024px) {
 
 }
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width:767px) {
+  .header {
+    display: block;
+    height: 80px;
+  }
+  .header ol {
+    height: 80px;
+  }
+  .header li{
+    height: 10px;
+  }
+  .header a {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width:480px) {
