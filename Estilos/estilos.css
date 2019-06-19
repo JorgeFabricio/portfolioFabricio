@@ -25,8 +25,85 @@
   padding: 10px;
   /*Orientation & position*/
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.name {
+  /*Font*/
+  color: #78A5A3;
+  text-decoration: none;
+  font-size: 25px;
+  /*Size*/
+  height: 45px;
+  /*Background*/
+  background-color: #1B4B5A;
+  /*Margin & padding*/
+  margin: 0px;
+  padding: 0px;
+  /*Orientation & position*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name:hover {
+  /*Font*/
+  color: #fff;
+
+}
+
+body header nav ol {
+  /*Size*/
+  height: auto;
+  /*Border*/
+  border-bottom: 3px solid #78A5A3;
+  border-top: 3px solid #78A5A3;
+  border-radius: 10px;
+  /*Background*/
+  background-color: #0F1F38;
+  /*Margin & padding*/
+  margin: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /*Orientation & position*/
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+body header nav ol li a {
+  /*Font*/
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFF;
+  /*Margin & padding*/
+  margin: 0px 3px 0px 3px;
+  padding: 5px;
+  /*Orientation & position*/
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+body header nav ol li a:hover {
+  /*Border*/
+  border-left: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+  border-radius: 10px;
+  /*Background*/
+  background-color: #0F1F38;
+}
+
+li {
+  /*Font*/
+  font-size: 20px;
+  text-align: center;
+  /*Margin & padding*/
+  margin: 0px 20px 0px 20px;
+  /*Orientation & position*/
+  flex-wrap: wrap;
+  display: inline;
 }
 
 .hero {
@@ -97,72 +174,20 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
-body header nav ol {
-  /*Size*/
-  height: 40px;
-  /*Border*/
-  border-bottom: 3px solid #78A5A3;
-  border-top: 3px solid #78A5A3;
-  border-radius: 10px;
-  /*Background*/
-  background-color: #1B4B5A;
-  /*Margin & padding*/
-  margin: 0px;
-  padding: 0px;
-  /*Orientation & position*/
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-body header nav ol li a {
-  /*Font*/
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #FFF;
-  /*Margin & padding*/
-  margin: 0px 3px 0px 3px;
-  padding: 5px;
-  /*Orientation & position*/
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-body header nav ol li a:hover {
-  /*Border*/
-  border-left: 3px solid #FFF;
-  border-right: 3px solid #FFF;
-  border-radius: 10px;
-  /*Background*/
-  background-color: #0F1F38;
-}
-
-li {
-  /*Font*/
-  font-size: 20px;
-  text-align: center;
-  /*Margin & padding*/
-  margin: 0px 20px 0px 20px;
-  /*Orientation & position*/
-  flex-wrap: wrap;
-  display: inline;
-}
-
 .portfolio-title, .certifications-title, .contact-title, .software-title {
   /*Font*/
   color: #FFF;
   font-family: 'Encode Sans', sans-serif;
   /*Size*/
-  width: 350px;
-  height: 40px;
+  width: auto;
+  height: auto;
   /*Border*/
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   /*Background*/
   background-color: #0F1F38;
   /*Margin & padding*/
-  margin: 0px 20px 0px 40px;
+  margin: 0px 20px 0px 20px;
   padding: 10px;
   /*Orientation and position*/
   display: flex;
@@ -201,7 +226,7 @@ li {
   color: #FFF;
   font-size: 20px;
   /*Size*/
-
+  width: auto;
   /*Border*/
   border-bottom: 3px solid #78A5A3;
   border-top: 3px solid #78A5A3;
@@ -209,17 +234,18 @@ li {
   /*Margin & padding*/
   margin: 0px 20px 60px 20px;
   padding: 40px;
-  padding-left: 100px;
+  padding-left: 50px;
   /*Background*/
   background-color: #0F1F38;
   /*Orientation and position*/
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .project-details {
+  /*Font*/
+  text-align: justify;
   /*Size*/
   width: 700px;
   /*Orientation & position*/
@@ -263,7 +289,7 @@ li {
   background-color: #0F1F38;
   /*Margin & padding*/
   margin: 0px 20px 60px 20px;
-  padding: 50px;
+  padding: 10%;
   /*Orientation & position*/
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -276,20 +302,13 @@ li {
   flex-wrap: wrap;
 }
 
-.certifications-deswebTitle {
-  /*Size*/
-  width: 400px;
-  /*Margin & padding*/
-  margin-left: auto;
-  margin-right: auto;
-  /*Border*/
-  border-right: 3px solid #FFF;
-  border-left: 3px solid #FFF;
+.certifications-titles {
+  text-align: center
+}
+
+.certifications h3 {
+  border-bottom: 1px solid #fff;
   border-radius: 10px;
-  /*Orientation & position*/
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
 }
 
 .certifications-imageContainer-desweb {
@@ -305,21 +324,6 @@ li {
   border-radius: 10px;
 }
 
-.certifications-engineeringTitle {
-  /*Size*/
-  width: 400px;
-  /*Margin & padding*/
-  margin-left: auto;
-  margin-right: auto;
-  /*Border*/
-  border-right: 3px solid #FFF;
-  border-left: 3px solid #FFF;
-  border-radius: 10px;
-  /*Orientation & position*/
-  display: flex;
-  justify-content: center;
-}
-
 .certifications-imageContainer-engineering {
   display: flex;
   flex-shrink: 0;
@@ -331,21 +335,6 @@ li {
   border-radius: 10px;
 }
 
-.certifications-englishTitle {
-  /*Size*/
-  width: 400px;
-  /*Margin & padding*/
-  margin-left: auto;
-  margin-right: auto;
-  /*Border*/
-  border-right: 3px solid #FFF;
-  border-left: 3px solid #FFF;
-  border-radius: 10px;
-  /*Orientation & position*/
-  display: flex;
-  justify-content: center;
-}
-
 .certifications-imageContainer {
   display: flex;
   flex-shrink: 0;
@@ -355,21 +344,6 @@ li {
 
 .eng1, .eng2, .eng3, .eng4, .eng5, .eng6 {
   border-radius: 10px;
-}
-
-.certifications-physicsTitle {
-  /*Size*/
-  width: 400px;
-  /*Margin & padding*/
-  margin-left: auto;
-  margin-right: auto;
-  /*Border*/
-  border-right: 3px solid #FFF;
-  border-left: 3px solid #FFF;
-  border-radius: 10px;
-  /*Orientation & position*/
-  display: flex;
-  justify-content: center;
 }
 
 .certifications-imageContainer-physics {
@@ -506,10 +480,9 @@ section article div figure {
 }
 
 .footer p {
-  border-bottom: 2px solid #FFF;
-  border-top: 2px solid #FFF;
+  border-bottom: 1px solid #FFF;
   border-radius: 10px;
-  padding: 2px;
+  padding-bottom: 6px;
 }
 
 .email-input {
@@ -538,19 +511,86 @@ section article div figure {
 
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:994px) {
+  /*Header*/
+  .name {
+    justify-content: center;
+  }
   .header {
     display: block;
-    height: 80px;
+    height: auto;
   }
-  .header ol {
-    height: 80px;
+  .header nav ol {
+    /*Font*/
+    text-align: center;
+    /*Size*/
+    height: auto;
+    width: auto;
+    /*Border*/
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-radius: 10px;
+    /*Margin & padding*/
+    padding: 5px;
+    /*Orientation & position*/
+    display: block;
   }
-  .header li{
-    height: 10px;
+  .header ol li {
+    height: 40px;
   }
-  .header a {
-    justify-content: center;
+  .header li {
+    display: block;
+  }
+  .header ol li a {
+    border-bottom: 1px solid #fff;
+    border-radius: 10px;
+  }
+
+  /*Portfolio*/
+  .project-details {
+    width: auto;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .hero {
+    height: 100%;
+  }
+  .hero h1 {
+    font-size: 35px;
+  }
+  .portfolio-title, .certifications-title, .contact-title, .software-title {
+    font-size: 20px;
+    width: auto;
+    height: auto;
+  }
+  .project-details, .certifications, .software-article, .contact-article, .footer-content,
+  .email-input, .send-button {
+    font-size: 20px;
+  }
+  .eng1, .eng2, .eng3, .eng4, .eng5, .eng6, .engineering1, .engineering2, .physics1, 
+  .desweb1 {
+    width: 100%;
+  }
+  .software-article {
+    text-align: center;
+    display: block;
+  }
+  .software-article p {
+    border: 0px;
+    border-bottom: 3px solid #fff;
+  }
+  .contact-div {
+    text-align: center
+  }
+  .email-input {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .send-button {
+    width: auto;
   }
 }
 

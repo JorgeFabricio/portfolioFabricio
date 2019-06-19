@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Encode+Sans|Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Estilos/estilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="Estilos/media.css" media="screen and (max-width:768px)"> -->
     <!-- <style>
       @media screen and (max-width:768px) {
@@ -19,6 +19,7 @@
   </head>
   <body>
     <header class="header">
+      <a class="name" href="file:///home/jorge/Escritorio/gitPortfolio/index.html">Jorge Fabricio</a>
       <nav class="menu">
         <ol>
           <li>
@@ -52,6 +53,7 @@
           en el cual se planea llevar a cabo la reserva de pasajes de viajes
           interestelares para poblar el universo.
           <br/>El proyecto se concretó dentro de un lapso de 4 meses.
+          <br/>
           <br/>Lenguaje: Java.
           <br/>IDE: NetBeans.
           <br/>Base de datos: MySQL</p>
@@ -64,13 +66,17 @@
     <section id="certificaciones">
       <h2 class="certifications-title"><strong>Certificaciones</strong></h2>
       <article class="certifications">
-        <h3 class="certifications-deswebTitle">Certificaciones en desarrollo web </h3>
+        <div class="certifications-titles">
+            <h3 class="certifications-deswebTitle">Certificaciones en desarrollo web </h3>
+        </div>
         <div class="certifications-imageContainer-desweb">
           <figure>
             <img class="desweb1" src="images/des-web.png" alt="Certificado: Desarrollo web." width="400px">
           </figure>
         </div>
-        <h3 class="certifications-engineeringTitle">Certificaciones en ingeniería</h3>
+        <div class="certifications-titles">
+            <h3 class="certifications-engineeringTitle">Certificaciones en ingeniería</h3>
+        </div>
         <div class="certifications-imageContainer-engineering">
           <figure>
             <img class="engineering1" src="images/ing-soft.png" alt="Certificado: ingeniería de software" width="400px">
@@ -79,7 +85,9 @@
             <img class="engineering2" src="images/git.png" alt="Certificado: Git y GitHub" width="400px">
           </figure>
         </div>
-        <h3 class="certifications-englishTitle">Certifiaciones en inglés</h3>
+        <div class="certifications-titles">
+            <h3 class="certifications-englishTitle">Certifiaciones en inglés</h3>
+        </div>
         <div class="certifications-imageContainer">
           <figure>
             <img class="eng1" src="images/bas-eng.png" alt="Certificado: inglés báisco." width="400px">
@@ -100,7 +108,9 @@
             <img class="eng6" src="images/major-eng.png" alt="Certificado: carrera en inglés." width="400px">
           </figure>
         </div>
-        <h3 class="certifications-physicsTitle">Certificaciones en ciencia</h3>
+        <div class="certifications-titles">
+            <h3 class="certifications-physicsTitle">Certificaciones en ciencia</h3>
+        </div>
         <div class="certifications-imageContainer-physics">
           <figure>
             <img class="physics1" src="images/astro-bio.png" alt="Certificado: astrobiología." width="400px">
@@ -124,8 +134,10 @@
           <p>Envíame un email con tu propuesta y la revisaré lo más pronto posible. </p>
           <p>Puedes entrar a mis perfiles en redes sociales para saber más de mi.</p>
           <br/>
-          <input class="email-input" type="text" placeholder="example@gmail.com" id="email">
-          <button type="button" class="send-button">Enviar</button>
+          <div class="contact-div">
+            <input class="email-input" type="text" placeholder="example@gmail.com" id="email">
+            <button type="button" class="send-button">Enviar</button>
+          </div>
         </form>
         <div class="social-media">
           <a href="https://github.com/" target="_blank" class="social-link github"></a>
