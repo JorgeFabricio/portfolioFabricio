@@ -25,7 +25,7 @@
   border: 5px solid #063852;
   border-radius: 10px;
   /*Background*/
-  background-color: #E6DF44;
+  background-color: #f2eb63;
   height: 40px;
   /*Margin & padding*/
   margin: 0px;
@@ -46,7 +46,7 @@
   height: 45px;
   /*Border*/ 
   /*Background*/
-  background-color: #E6DF44;
+  background-color: #f2eb63;
   /*Margin & padding*/
   margin: 0px;
   padding: 0px;
@@ -66,7 +66,7 @@ body header nav ol {
   height: auto;
   /*Border*/
   /*Background*/
-  background-color: #E6DF44;
+  background-color: #f2eb63;
   /*Margin & padding*/
   margin: 0px;
   margin-top: -10px;
@@ -158,7 +158,7 @@ h1 {
 
 h1 strong {
   /*Font*/
-  color: #E6DF44;
+  color: #f2eb63;
   /*Orientation & position*/
   flex-wrap: wrap;
 }
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   /*Background*/
-  background-color: #E6DF44;
+  background-color: #f2eb63;
   /*Margin & padding*/
   margin: 0px 20px 0px 20px;
   padding: 10px;
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 40px;
   padding-left: 50px;
   /*Background*/
-  background-color: #E6DF44;
+  background-color: #f2eb63;
   /*Orientation and position*/
   display: flex;
   justify-content: center;
@@ -276,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 3px solid #063852;
   border-radius: 10px;
   /*Background*/
-  background-color: #E6DF44;
+  background-color: #f2eb63;
   /*Margin & padding*/
   margin: 0px 20px 60px 20px;
   padding: 10%;
@@ -364,7 +364,7 @@ section article div figure {
 .software-article {
   color: #063852;
   font-size: 25px;
-  background-color: #E6DF44;
+  background-color: #f2eb63;
   border-bottom: 3px solid #063852;
   border-top: 3px solid #063852;
   border-radius: 10px;
@@ -383,7 +383,7 @@ section article div figure {
 .contact-article {
   font-size: 20px;
   color: #063852;
-  background-color: #E6DF44;
+  background-color: #f2eb63;
   border-bottom: 3px solid #063852;
   border-top: 3px solid #063852;
   border-radius: 10px;
@@ -396,7 +396,7 @@ section article div figure {
 }
 
 .contact-title {
-  background-color: #E6DF44;
+  background-color: #f2eb63;
   color: #063852;
 }
 
@@ -412,7 +412,6 @@ section article div figure {
 .social-link.github, .social-link.twitter, .social-link.facebook, .social-link.instagram{
   width: 70px;
   height: 70px;
-  background-color:#063852;
   border-radius: 10px;
 }
 
@@ -433,7 +432,7 @@ section article div figure {
 }
 
 .footer-content {
-  background-color: #063852;
+  background-color: #f2eb63;
   color: #063852;
   text-decoration: none;
   display: flex;
