@@ -62,7 +62,6 @@
 .name:hover {
   /*Font*/
   color: #fff;
-
 }
 
 body header nav ol {
@@ -496,6 +495,8 @@ section article div figure {
   .header {
     display: block;
     height: auto;
+    width: auto;
+    position: initial;
   }
   .header nav ol {
     /*Font*/
@@ -528,6 +529,12 @@ section article div figure {
   /*Portfolio*/
   .project-details {
     width: auto;
+    font-size: 25px;
+  }
+
+  /*Contact*/
+  .contact-article {
+    font-size: 25px;
   }
 }
 
@@ -572,7 +579,25 @@ section article div figure {
 }
 
 @media screen and (max-width:480px) {
-
+  .name {
+    font-size: 1em;
+    height: 30px;
+  }
+  .header ol li {
+    height: 29px;
+  }
+  .header nav ol li a {
+    font-size: 13px;
+  }
+  .hero {
+    padding-top: initial;
+  }
+  .project-image {
+    width: 100%;
+  }
+  .footer div p {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width:320px) {
