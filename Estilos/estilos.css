@@ -306,7 +306,7 @@ body {
   border-top: 3px solid #063852;
   border-radius: 10px;
   margin: -10px 20px 60px 20px;
-  padding: 30px;
+  padding: 40px 40px 40px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -522,7 +522,19 @@ body {
   .email-input, .send-button {
     font-size: 15px;
   }
-
+.contact-article {
+  text-align: center;
+}
+.email-input {
+  width: 180px;
+  height: 20px;
+  font-size: 12px;
+}
+.send-button {
+  width: 60px;
+  height: 30px;
+  font-size: 12px;
+}
   .footer div p {
     font-size: 11px;
   }
