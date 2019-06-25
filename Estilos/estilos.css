@@ -23,18 +23,19 @@
 .header {
   /*Size*/
   width: 100%;
+  height: 40px;
   /*Border*/
   border: 5px solid #063852;
   border-radius: 10px;
   /*Background*/
   background-color: #6b6a6a;
-  height: 40px;
   /*Margin & padding*/
   margin: 0px;
   padding: 10px;
   /*Orientation & position*/
   position: fixed;
   top: 0;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -48,7 +49,6 @@
   font-size: 25px;
   /*Size*/
   height: 45px;
-  /*Border*/ 
   /*Background*/
   background-color: #6b6a6a;
   /*Margin & padding*/
@@ -56,18 +56,11 @@
   padding: 0px;
   /*Orientation & position*/
   display: flex;
-  flex-wrap: wrap;
-}
-
-.name:hover {
-  /*Font*/
-  color: #fff;
 }
 
 body header nav ol {
   /*Size*/
   height: auto;
-  /*Border*/
   /*Background*/
   background-color: #6b6a6a;
   /*Margin & padding*/
@@ -76,10 +69,15 @@ body header nav ol {
   padding-top: 5px;
   padding-bottom: 5px;
   /*Orientation & position*/
-  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
   vertical-align: center;
+}
+
+li {
+  /*Margin & padding*/
+  margin: 0px 20px 0px 20px;
+  /*Orientation & position*/
+  display: inline;
 }
 
 body header nav ol li a {
@@ -88,28 +86,13 @@ body header nav ol li a {
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  /*Margin & padding*/
-  margin: 0px 3px 0px 3px;
-  padding: 5px;
   /*Orientation & position*/
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 
-body header nav ol li a:hover {
+.name:hover, body header nav ol li a:hover, .send-button:hover {
   /*Font*/
-  color: #fff;
-}
-
-li {
-  /*Font*/
-  font-size: 20px;
-  text-align: center;
-  /*Margin & padding*/
-  margin: 0px 20px 0px 20px;
-  /*Orientation & position*/
-  flex-wrap: wrap;
-  display: inline;
+  color: #063852;
 }
 
 .hero {
@@ -119,10 +102,37 @@ li {
   height: auto;
   /*Margin & padding*/
   padding-top: 60px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   /*Orientation & position*/
   display: block;
   flex-wrap: wrap;
+}
+
+p {
+  /*Font*/
+  font-family: 'Encode Sans', sans-serif;
+}
+
+h1 {
+  /*Font*/
+  color: #FFF;
+  line-height: 53px;
+  font-size: 50px;
+  text-shadow: 5px 5px #000;
+  /*Size*/
+  width: 100%;
+}
+
+h1 strong {
+  /*Font*/
+  color: #76afd3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /*Font*/
+  font-family: "Signika", sans-serif;
+  font-weight: normal;
+  letter-spacing: -.2px;
 }
 
 .hero-image {
@@ -137,43 +147,6 @@ body {
   margin: 0;
   /*Background*/
   background-color: #011A27;
-  /*Orientation & position*/
-  flex-wrap: wrap;
-}
-
-p {
-  /*Font*/
-  font-family: 'Encode Sans', sans-serif;
-  /*Orientation & position*/
-  flex-wrap: wrap;
-}
-
-h1 {
-  /*Font*/
-  color: #FFF;
-  line-height: 53px;
-  font-size: 50px;
-  text-shadow: 5px 5px #000;
-  /*Size*/
-  width: 100%;
-  /*Orientation & position*/
-  flex-wrap: wrap;
-}
-
-h1 strong {
-  /*Font*/
-  color: #76afd3;
-  /*Orientation & position*/
-  flex-wrap: wrap;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  /*Font*/
-  font-family: "Signika", sans-serif;
-  font-weight: normal;
-  letter-spacing: -.2px;
-  /*Orientation & position*/
-  flex-wrap: wrap;
 }
 
 .portfolio-title, .certifications-title, .contact-title, .software-title {
@@ -182,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Encode Sans', sans-serif;
   /*Size*/
   width: auto;
-  height: auto;
+  height: 40px;
   /*Border*/
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -194,25 +167,6 @@ h1, h2, h3, h4, h5, h6 {
   /*Orientation and position*/
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-}
-
-.software-title {
-  /*Orientation & position*/
-  flex-wrap: wrap;
-  left: 650px;
-}
-
-.certifications-title {
-  /*Orientation & position*/
-  flex-wrap: wrap;
-  left: 250px;
-}
-
-.contact-title {
-  /*Orientation & position*/
-  flex-wrap: wrap;
-  left: 450px;
 }
 
 .project {
@@ -242,16 +196,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: justify;
   /*Size*/
   width: 700px;
-  /*Orientation & position*/
-  flex-wrap: wrap;
 }
 
 .project-details a {
   /*Font*/
   color: #fff;
   text-decoration: none;
-  /*Orientation & position*/
-  flex-wrap: wrap;
 }
 
 .project-details a:hover {
@@ -266,15 +216,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   /*Margin & padding*/
   margin: 0px;
-  /*Orientation & position*/
-  flex-wrap: wrap;
 }
 
 .certifications {
   /*Font*/
   color: #fff;
   font-size: 20px;
-  /*Size*/
   /*Border*/
   border-bottom: 3px solid #063852;
   border-top: 3px solid #063852;
@@ -284,16 +231,11 @@ h1, h2, h3, h4, h5, h6 {
   /*Margin & padding*/
   margin: 0px 20px 60px 20px;
   padding: 20px;
-  /*Orientation & position*/
-  flex-wrap: wrap;
-  box-sizing: border-box;
 }
 
 .certifications a {
   /*Font*/
   color: #fff;
-  /*Orientation & position*/
-  flex-wrap: wrap;
 }
 
 .certifications-titles {
@@ -305,49 +247,16 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
 }
 
-.certifications-imageContainer-desweb {
+.certifications-imageContainer-desweb, .certifications-imageContainer-engineering, .certifications-imageContainer, .certifications-imageContainer-physics  {
   /*Orientation & position*/
   display: flex;
   flex-shrink: 0;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.desweb1 {
+.desweb1, .engineering1, .engineering2, .eng1, .eng2, .eng3, .eng4, .eng5, .eng6, .physics1 {
   /*Border*/
-  border-radius: 10px;
-}
-
-.certifications-imageContainer-engineering {
-  display: flex;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.engineering1, .engineering2 {
-  border-radius: 10px;
-}
-
-.certifications-imageContainer {
-  display: flex;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.eng1, .eng2, .eng3, .eng4, .eng5, .eng6 {
-  border-radius: 10px;
-}
-
-.certifications-imageContainer-physics {
-  display: flex;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.physics1 {
   border-radius: 10px;
 }
 
@@ -361,22 +270,26 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
-section article div figure {
-  margin: 5px;
-}
-
 .software-article {
+  /*Font*/
   color: #fff;
   font-size: 25px;
+  /*Size*/
+  width: auto;
+  height: auto;
+  /*Background*/
   background-color: #6b6a6a;
+  /*Border*/
   border-bottom: 3px solid #063852;
   border-top: 3px solid #063852;
   border-radius: 10px;
+  /*Margin & padding*/
   padding: 20px;
   margin: 0px 20px 60px 20px;
-  box-sizing: border-box;
+  /*Orientation & position*/
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .software-article p {
@@ -387,6 +300,7 @@ section article div figure {
 .contact-article {
   font-size: 20px;
   color: #fff;
+  width: auto;
   background-color: #6b6a6a;
   border-bottom: 3px solid #063852;
   border-top: 3px solid #063852;
@@ -397,13 +311,6 @@ section article div figure {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.contact-title {
-  background-color: #6b6a6a;
-  color: #fff;
-  height: 40px;
-  font-weight: bold;
 }
 
 .social-link {
@@ -450,7 +357,6 @@ section article div figure {
 .footer-content a {
   color: #fff;
   text-decoration: none;
-  flex-wrap: wrap;
 }
 
 .footer p {
@@ -470,16 +376,21 @@ section article div figure {
 
 .send-button {
   margin: 0px;
-  margin-top: 5px;
   height: 40px;
   width: 80px;
   border-radius: 10px;
   background-color: #fff;
 }
 
-.send-button:hover {
-  color: #FFF;
-  cursor: pointer;
+@media screen and (max-width:1090px) {
+  .contact-div {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .send-button {
+    margin-left: 5px;
+  }
 }
 
 @media screen and (max-width:1024px) {
@@ -506,13 +417,8 @@ section article div figure {
     /*Size*/
     height: auto;
     width: auto;
-    /*Border*/
-    border-top: 0px;
-    border-bottom: 0px;
-    border-left: 3px solid #063852;
-    border-right: 3px solid #063852;
-    border-radius: 10px;
     /*Margin & padding*/
+    margin: 5px;
     padding: 5px;
     /*Orientation & position*/
     display: block;
@@ -523,11 +429,6 @@ section article div figure {
   .header li {
     display: block;
   }
-  .header ol li a {
-    border-bottom: 1px solid #063852;
-    border-radius: 10px;
-  }
-
   /*Portfolio*/
   .project-details {
     width: auto;
@@ -550,7 +451,7 @@ section article div figure {
   .portfolio-title, .certifications-title, .contact-title, .software-title {
     font-size: 20px;
     width: auto;
-    height: auto;
+    height: 30px;
   }
   .project-details, .certifications, .software-article, .contact-article, .footer-content,
   .email-input, .send-button {
@@ -599,6 +500,12 @@ section article div figure {
   }
   .footer div p {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width:475px) {
+  .social-media {
+    text-align: center;
   }
 }
 
